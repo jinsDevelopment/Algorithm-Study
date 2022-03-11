@@ -1,4 +1,8 @@
+import collections
+from typing import List
+
 class Solution:
+    # 혼자 풀이(성공) + 구글링
     def groupAnagrams(self, strs):
 
         answer = []
@@ -21,6 +25,15 @@ class Solution:
             answer.append(Anagrams[key])
 
         return answer
+
+    # 책 풀이
+    def groupAnagrams_book(self, strs: List[str]) -> List[List[str]]:
+        anagrams = collections.defaultdict(list)
+
+        for word in strs:
+            # 정렬하여 딕셔너리에 추가
+            anagrams[''.join(sorted(word))].append(word)
+        return list(anagrams.values())
 
 
 if __name__ == "__main__":
