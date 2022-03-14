@@ -24,7 +24,7 @@ class Solution:
             li = []
             for i in answer:
                 li.append(i)
-            return '    '.join(li)
+            return '\n'.join(li)
 
 if __name__ == "__main__":
     s = Solution()
