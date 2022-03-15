@@ -19,4 +19,4 @@ class Solution:
 if __name__ == "__main__":
     s = Solution()
     intArray = [73,74,75,71,69,72,76,73]
-    print(s.dailyTemperatures(intArray))
+    print(s.dailyTemperatures_book(intArray))

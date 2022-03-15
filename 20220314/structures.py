@@ -22,3 +22,14 @@ class Stack:
 
     def is_empty(self):
         return self.top is None
+
+
+if __name__ == "__main__":
+    s = Stack()
+
+    s.push(1)
+
+    print(s.top)
+    print(s.pop())
+    # intArray = [73,74,75,71,69,72,76,73]
+
